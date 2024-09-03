@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Website</title>
+</head>
+<body>
+    <h1>Hi I am Sam</h1>
+    
+    <!-- Add the click counter elements -->
+    <button id="clickButton">Click me!</button>
+    <p>Click count: <span id="clickCount">0</span></p>
+
+    <!-- Add the JavaScript for the click counter -->
+    <script>
+        let count = 0;
+        const button = document.getElementById('clickButton');
+        const countDisplay = document.getElementById('clickCount');
+
+        button.addEventListener('click', () => {
+            count++;
+            countDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>
